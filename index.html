@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TempTracker - Tu compañero climático</title>
+  <link rel="icon" type="image/x-icon" href="./imagenes/favicon.png" />
+  <link rel="stylesheet" href="./estilos.css" />
+</head>
+<body>
+
+  <div class="contenedor">
+    <!-- Buscador -->
+    <div class="buscador">
+      <input type="text" placeholder="Ingresa nombre de la ciudad" spellcheck="false" autocomplete="off" id="input-ciudad" />
+      <button onclick="obtenerClima()">
+        <img src="./imagenes/buscar.png" alt="Buscar" />
+      </button>
+    </div>
+
+    <!-- Información del Clima -->
+    <div class="clima-info" id="clima-contenedor">
+      <p class="clima-texto">Parcialmente nublado</p>
+      <img src="./imagenes/clima-ejemplo.webp" class="clima-icono" alt="Icono del clima" />
+      <h1 class="temp">22°c</h1>
+      <h2 class="ciudad">Huancayo</h2>
+      
+      <div class="detalles">
+        <div class="col">
+          <img src="./imagenes/humedad.png" alt="Humedad" />
+          <div>
+            <p class="humedad">50%</p>
+            <p>Humedad</p>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./imagenes/viento.png" alt="Viento" />
+          <div>
+            <p class="viento">15 km/h</p>
+            <p>Viento</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./codigo.js"></script>
+</body>
+</html>
